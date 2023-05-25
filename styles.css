@@ -27,6 +27,7 @@ body {
 .heading, section.main-display section {
   margin-left: 30px;
   color: #fff;
+	gap: 60px;
 }
 
 .green {
@@ -44,7 +45,7 @@ section.heading h1 {
 	color: #fff;
 	margin-top: 40px;
 	margin-bottom: 20px;
-	width: 190px;
+	width: 200px;
 	height: 40px;
 	border-radius: 10px;
 }
