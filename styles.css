@@ -1,0 +1,25 @@
+* {
+	box-sizing: border-box;
+	font-family: 'IBM Plex Mono', monospace;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #1c1c1c;
+  box-sizing: border-box;
+}
+
+.main-display {
+  width: 550px;
+  height: 550px;
+  background: #273549;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border: 5px solid whitesmoke;
+  border-radius: 20px;
+}
