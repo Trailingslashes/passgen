@@ -1,6 +1,6 @@
 * {
-	box-sizing: border-box;
-	font-family: 'IBM Plex Mono', monospace;
+  box-sizing: border-box;
+  font-family: "IBM Plex Mono", monospace;
 }
 
 body {
@@ -12,7 +12,7 @@ body {
 
 .main-display {
   width: 550px;
-  height: 550px;
+  height: 490px;
   background: #273549;
   position: absolute;
   top: 0;
@@ -22,4 +22,52 @@ body {
   margin: auto;
   border: 5px solid whitesmoke;
   border-radius: 20px;
+}
+
+.heading, section.main-display section {
+  margin-left: 30px;
+  color: #fff;
+}
+
+.green {
+  color: #4adf86;
+}
+
+section.heading h1 {
+  font-size: 40px;
+	margin-bottom: 8px;
+}
+
+
+#genpassword {
+  background: #10b981;
+	color: #fff;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	width: 190px;
+	height: 40px;
+	border-radius: 10px;
+}
+
+#genpassword:hover {
+	cursor: pointer;
+}
+
+hr {
+	border: 1px solid #2F3E53;
+	width: 90%;
+}
+
+.password-fields {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 20px;
+}
+
+#password-1, #password-2 {
+	width: 200px;
+	height: 40px;
+	background: #3B506E;
+	border-radius: 10px;
+	margin-right: auto;
 }
