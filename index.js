@@ -1,6 +1,6 @@
 const passwordOne = document.getElementById("password-1");
 const passwordTwo = document.getElementById("password-2");
-const generatePassword = document.getElementById("genpassword")
+const genPassBtn = document.getElementById("genpassword")
 const characters = [
   "A",
   "B",
@@ -96,17 +96,25 @@ const characters = [
 ];
 
 
-generatePassword.addEventListener("click", function() {
+genPassBtn.addEventListener("click", function() {
 	passwordOne.textContent = ""; // ensure old passwords are cleared
-  passwordTwo.textContent = ""; 
-	for (let i = 0; i < 11; i++) {
-    randomIndexOne = characters[Math.floor(Math.random() * characters.length)];
-    randomIndexTwo = characters[Math.floor(Math.random() * characters.length)];
-		passwordOne.textContent += randomIndexOne
-		passwordTwo.textContent += randomIndexTwo
-  }
+  passwordTwo.textContent = "";
+	passwordOne.textContent += generatePassword()
+	passwordTwo.textContent += generatePassword()
 })
 
+function generatePassword() {
+  let randomPassword = ""
+  for (let i = 0; i < 11; i++) {
+    randomPassword += characters[Math.floor(Math.random() * characters.length)];
+  }
+  return randomPassword
+}
 
-// document.getElementById("password-1").style.textAlign = "center";
-// document.getElementById("password-2").style.textAlign = "center";
+passwordOne.addEventListener("click", () => {
+	navigator.clipboard.writeText(passwordOne.textContent)
+})
+
+passwordTwo.addEventListener("click", () => {
+	navigator.clipboard.writeText(passwordTwo.textContent)
+})

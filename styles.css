@@ -74,3 +74,7 @@ hr {
 	text-align: center;
 	line-height: 2.3;
 }
+
+#password-1:hover, #password-2:hover {
+	cursor: pointer;
+}
