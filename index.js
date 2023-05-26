@@ -113,8 +113,10 @@ function generatePassword() {
 
 passwordOne.addEventListener("click", () => {
 	navigator.clipboard.writeText(passwordOne.textContent)
+	console.log("Text copied to clipboard!");
 })
 
 passwordTwo.addEventListener("click", () => {
 	navigator.clipboard.writeText(passwordTwo.textContent)
+	console.log("Text copied to clipboard!");
 })
